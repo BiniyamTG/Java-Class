@@ -419,11 +419,5 @@ for (int i = 1; i <= 5; i++) {
 
 ---
 
-**You now understand the DNA of every Java program.**
-Every algorithm, every application — it all begins here.
-
----
-
-```
 
 
