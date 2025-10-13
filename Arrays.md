@@ -265,16 +265,141 @@ Given an array `{12, 5, 9, 21, 15}`, find and print the largest number.
 
 Create an integer array and print only even numbers using a `for-each` loop.
 
-### Exercise 4: Sum of Rows (2D Array)
 
-For this 2D array:
+
+
+
+
+# Java 2D Array: Sum of Elements
+
+---
+
+## 1. The 2D Array Declaration
 
 ```java
-int[][] numbers = {
-    {2, 4, 6},
-    {1, 3, 5},
-    {7, 9, 11}
+int[][] marks = {
+    {50, 65, 70},
+    {55, 68, 75},
+    {57, 61, 78}
 };
+````
+
+* `int[][]` means a **2-dimensional array of integers**.
+* You can think of it as a **table** with rows and columns:
+
+| Row | Column 0 | Column 1 | Column 2 |
+| --- | -------- | -------- | -------- |
+| 0   | 50       | 65       | 70       |
+| 1   | 55       | 68       | 75       |
+| 2   | 57       | 61       | 78       |
+
+* `marks.length` → gives **number of rows** (3 in this case).
+* `marks[i].length` → gives **number of columns in row i** (3 for each row here).
+
+---
+
+## 2. Variable Initialization
+
+```java
+int total = 0;
 ```
+
+* We initialize `total` to `0` because we will **accumulate the sum of all elements** of the 2D array.
+
+---
+
+## 3. Nested For Loops
+
+```java
+for (int i = 0; i < marks.length; i++) {          // iterate over rows
+    for (int j = 0; j < marks[i].length; j++) {   // iterate over columns
+        total += marks[i][j];
+    }
+}
+```
+
+### **Understanding Nested Loops**
+
+**Outer Loop (`i`)**
+
+* `i` goes from `0` to `marks.length - 1`.
+* Represents the **row index**.
+* Example: `i = 0, 1, 2` (3 rows).
+
+**Inner Loop (`j`)**
+
+* For each row `i`, `j` goes from `0` to `marks[i].length - 1`.
+* Represents the **column index**.
+* Example: `j = 0, 1, 2` (3 columns).
+
+**Accessing Elements**
+
+* `marks[i][j]` → accesses the element at **row `i` and column `j`**.
+* Examples:
+
+  * `marks[0][0]` → 50
+  * `marks[0][1]` → 65
+  * `marks[2][2]` → 78
+
+**Adding to Total**
+
+```java
+total += marks[i][j];
+```
+
+* Equivalent to:
+
+```java
+total = total + marks[i][j];
+```
+
+* Each element of the 2D array is added **one by one** to `total`.
+
+---
+
+## 4. Printing the Result
+
+```java
+System.out.println("Total sum of all marks: " + total);
+```
+
+* After the loops finish, `total` contains the **sum of all elements** in the 2D array.
+
+**Output:**
+
+```
+Total sum of all marks: 579
+```
+
+✅ **Calculation step by step:**
+
+* Row 0: 50 + 65 + 70 = 185
+* Row 1: 55 + 68 + 75 = 198
+* Row 2: 57 + 61 + 78 = 196
+* Total: 185 + 198 + 196 = 579
+
+---
+
+## 5. Summary of How It Works
+
+1. A 2D array stores data in **rows and columns**.
+2. We use **nested loops** to traverse every element:
+
+   * Outer loop → rows
+   * Inner loop → columns
+3. Each element is added to a **running total**.
+4. Finally, we **print the total sum**.
+
+---
+
+## 6. Extra Exercises You Can Try
+
+* Print the **sum of each row** individually.
+* Print the **sum of each column** individually.
+* Find the **maximum value** in the 2D array.
+
+```
+
+
 
 
