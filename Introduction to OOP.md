@@ -44,20 +44,20 @@ By the end of this note, you will understand:
 
 ---
 
-## 📦 **Java Packages**
+## **Java Packages**
 
-### 🧱 Definition
+### Definition
 
 A **package** is a collection of related **classes, interfaces, and sub-packages**.
 
-### 📂 Types
+### Types
 
 1. **Built-in packages:** e.g. `java.lang`, `java.util`, `java.io`, `java.sql`  
 2. **User-defined packages:** custom packages created by developers.  
 
 ---
 
-### 🌟 **Advantages**
+### **Advantages**
 
 1. Organizes code → easier maintenance  
 2. Prevents naming conflicts  
@@ -65,7 +65,7 @@ A **package** is a collection of related **classes, interfaces, and sub-packages
 
 ---
 
-### 🧭 **How to Access Packages**
+### **How to Access Packages**
 
 1. `import package.*;` → imports all classes in the package  
 2. `import package.ClassName;` → imports only one class  
@@ -148,7 +148,7 @@ Relationship:
 
 ---
 
-### 🧩 **Polymorphism**
+### **Polymorphism**
 
 **Definition:** One interface, many methods.
 Same method name, different parameters (method overloading).
@@ -339,5 +339,5 @@ System.out.println(b1.volume()); // Uses initialized values
 
 
 
-Would you like me to make it **visually enhanced** (with color-coded code blocks and emojis styled for Notion or GitHub dark mode)?
+
 ```
