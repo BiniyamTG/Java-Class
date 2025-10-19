@@ -447,10 +447,3 @@ An inner class is like a **department** inside a **company** — it exists only 
 | Inner Class  | Department inside a company               |
 
 ---
-
----
-
-If you want, I can **also add collapsible code sections and callout boxes** in Markdown to make it even more readable and study-friendly.  
-
-Do you want me to do that next?
-```
