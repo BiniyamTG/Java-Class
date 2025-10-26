@@ -1,4 +1,4 @@
-# ☕ Java Collections 
+# Java Collections 
 
 ---
 
@@ -352,5 +352,5 @@ public class Main {
 
 ---
 
-Would you like me to format it into a **ready-to-download `.md` file** (Markdown file) so you can open it in VS Code or Obsidian easily?
+
 ```
