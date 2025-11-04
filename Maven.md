@@ -1,15 +1,15 @@
-## 🧭 PART 1: MAVEN CONCEPTS & WORKFLOW
+## PART 1: MAVEN CONCEPTS & WORKFLOW
 
 ---
 
-### 🌟 1. What is Maven?
+### 1. What is Maven?
 
 **Definition:**
 Apache Maven is a **project management and build automation tool** primarily used for **Java-based projects**. It helps developers **build**, **test**, **package**, and **deploy** software efficiently and consistently.
 
 ---
 
-### 🧠 Simple Explanation (Layman’s View)
+### Simple Explanation (Layman’s View)
 
 Imagine you’re running a **restaurant kitchen**:
 
@@ -19,7 +19,7 @@ Imagine you’re running a **restaurant kitchen**:
 
 Now imagine every chef in the kitchen uses different tools, recipes, and timings — chaos, right?
 
-💡 Maven is like a **head chef** who says:
+Maven is like a **head chef** who says:
 
 > “Everyone will use the same recipe format, ingredient list, and cooking process.”
 
@@ -27,7 +27,7 @@ This way, no matter who cooks, the final dish (your software) always turns out t
 
 ---
 
-### ⚙️ 2. What Maven Does
+### 2. What Maven Does
 
 | Function | Description |
 | -------- | ------------ |
@@ -40,7 +40,7 @@ This way, no matter who cooks, the final dish (your software) always turns out t
 
 ---
 
-### 🏗️ 3. Maven’s Philosophy — Convention over Configuration
+### 3. Maven’s Philosophy — Convention over Configuration
 
 If you follow Maven’s **standard structure**, you don’t need to configure file locations manually.
 
@@ -58,7 +58,7 @@ project-folder/
 
 ````
 
-💡 **pom.xml** = *Project Object Model*
+**pom.xml** = *Project Object Model*
 It’s the **blueprint** that tells Maven:
 
 * What your project is called  
@@ -68,7 +68,7 @@ It’s the **blueprint** that tells Maven:
 
 ---
 
-### 🧩 4. Why Teams Use Maven
+### 4. Why Teams Use Maven
 
 Without Maven:
 
@@ -85,7 +85,7 @@ With Maven:
 
 ---
 
-### 📖 5. Maven’s History in Short
+### 5. Maven’s History in Short
 
 Before Maven, developers used **Ant**, which was powerful but **manual**.  
 The **Jakarta Turbine Project** led to the creation of Maven by the **Apache Foundation**.
@@ -99,7 +99,7 @@ The **Jakarta Turbine Project** led to the creation of Maven by the **Apache Fou
 
 ---
 
-### 🎯 6. Maven’s Core Objectives
+### 6. Maven’s Core Objectives
 
 1. **Standardization** — all Maven projects follow one structure.  
 2. **Reusability** — share components and code easily.  
@@ -108,7 +108,7 @@ The **Jakarta Turbine Project** led to the creation of Maven by the **Apache Fou
 
 ---
 
-### 🧠 7. Understanding POM (Project Object Model)
+### 7. Understanding POM (Project Object Model)
 
 **pom.xml** is the **heart and brain** of a Maven project.
 
@@ -138,7 +138,7 @@ The **Jakarta Turbine Project** led to the creation of Maven by the **Apache Fou
 
 ---
 
-### 🔄 8. Maven Build Lifecycle
+### 8. Maven Build Lifecycle
 
 When you run:
 
@@ -160,7 +160,7 @@ Maven executes phases sequentially:
 
 ---
 
-### ⚡ 9. Maven Plugins
+### 9. Maven Plugins
 
 Maven uses **plugins** for tasks.
 
@@ -174,7 +174,7 @@ Think of plugins as **small workers** that handle specific tasks.
 
 ---
 
-### 🧭 10. Maven Repositories
+### 10. Maven Repositories
 
 | Type        | Location               | Description                |
 | ----------- | ---------------------- | -------------------------- |
@@ -203,11 +203,11 @@ Order of search:
 
 ---
 
-## 💻 PART 2: MAVEN ENVIRONMENT SETUP
+## PART 2: MAVEN ENVIRONMENT SETUP
 
 ---
 
-### ⚙️ Step 1: Install Java (JDK)
+### Step 1: Install Java (JDK)
 
 Check if Java is installed:
 
@@ -216,11 +216,11 @@ java -version
 ```
 
 If not, download from:
-👉 [Oracle JDK Downloads](https://www.oracle.com/java/technologies/javase-downloads.html)
+[Oracle JDK Downloads](https://www.oracle.com/java/technologies/javase-downloads.html)
 
 ---
 
-### 🧭 Step 2: Set JAVA_HOME
+### Step 2: Set JAVA_HOME
 
 **Example Path (Windows):**
 
@@ -242,9 +242,9 @@ java -version
 
 ---
 
-### 📦 Step 3: Download Maven
+### Step 3: Download Maven
 
-👉 [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)
+[https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)
 
 Choose:
 
@@ -253,7 +253,7 @@ Choose:
 
 ---
 
-### 📂 Step 4: Extract Maven
+### Step 4: Extract Maven
 
 Unzip to:
 
@@ -263,7 +263,7 @@ C:\Program Files\Apache\apache-maven-3.9.0
 
 ---
 
-### 🔧 Step 5: Set Environment Variables
+### Step 5: Set Environment Variables
 
 | Variable       | Description      | Example                                      |
 | -------------- | ---------------- | -------------------------------------------- |
@@ -275,7 +275,7 @@ Add `;%M2%` to **PATH**.
 
 ---
 
-### 🧠 Step 6: Verify Installation
+### Step 6: Verify Installation
 
 Run:
 
@@ -292,11 +292,11 @@ Java version: 1.8.0_21
 OS name: Windows 10
 ```
 
-🎉 Maven is ready!
+Maven is ready!
 
 ---
 
-### 💡 In Simple Words
+### In Simple Words
 
 | Term              | Meaning                        |
 | ----------------- | ------------------------------ |
@@ -307,7 +307,7 @@ OS name: Windows 10
 
 ---
 
-### 🚫 Common Setup Errors
+### Common Setup Errors
 
 | Problem               | Cause             | Fix                 |
 | --------------------- | ----------------- | ------------------- |
@@ -317,7 +317,7 @@ OS name: Windows 10
 
 ---
 
-### 💪 Pro Tips
+### Pro Tips
 
 * Keep Java and Maven versions compatible (Java 8–17 recommended).
 * Run `mvn help:effective-pom` to view final project configuration.
@@ -325,7 +325,7 @@ OS name: Windows 10
 
 ---
 
-## 🧩 Final Analogy Recap
+## Final Analogy Recap
 
 | Real World    | Maven Equivalent |
 | ------------- | ---------------- |
